@@ -1,0 +1,14 @@
+App(
+    appid="irblaster",
+    name="IR Blaster",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="irblaster_main",
+    requires=["gui"],
+    stack_size=1 * 1024,
+    fap_icon="ir_10px.png",
+    fap_category="Infrared",
+    fap_author="Mateusz Szafraniec",
+    fap_weburl="https://github.com/mateusz-szafraniec/flipperzero-IR_Blaster",
+    fap_version=(1, 0),
+    fap_description="IR Blaster for Flipper Zero.",
+)
