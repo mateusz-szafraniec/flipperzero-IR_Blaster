@@ -115,6 +115,7 @@ void ir_transmit(TheContext* context) {
 
 void shooting(void* ctx) {
     TheContext* context = (TheContext*)ctx;
+    /*
     FURI_LOG_I(
         TAG,
         "Transmit: %s a:0x%lX c:0x%lX maxC:0x%lX maxA:0x%lX",
@@ -123,6 +124,7 @@ void shooting(void* ctx) {
         (uint32_t)context->command,
         getMaxCommand(context),
         getMaxAddress(context));
+    */
     ir_transmit(context);
     context->command++;
     if(context->command > getMaxCommand(context)) {
